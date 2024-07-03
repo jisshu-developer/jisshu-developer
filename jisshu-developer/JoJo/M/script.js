@@ -11,7 +11,7 @@ function getUrlParameter(name) {
 const telegramUserId = getUrlParameter('userId');
 const userName = getUrlParameter('userName'); // You can also add userName parameter if needed
 
-if (!5672857559) {
+if (!telegramUserId) {
     const errorMessage = 'User ID not found. Please access this page through the Jisshu bots.';
     alert(errorMessage);
     throw new Error(errorMessage);
